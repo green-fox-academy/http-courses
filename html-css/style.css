@@ -1,0 +1,36 @@
+html,
+body {
+  color: rgba(0, 0, 0, 0.84);
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url("images/header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+}
+
+main {
+  margin: auto;
+  width: 70%;
+}
+
+section::after {
+  content: "...";
+  display: block;
+  letter-spacing: 13px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.interviewer {
+  font-weight: bold;
+}

@@ -1,0 +1,21 @@
+.nav-link {
+  font-size: 50px;
+}
+
+.first,
+.second,
+.third {
+  color: white;
+}
+
+.first {
+  background-color: red;
+}
+
+.second {
+  background-color: blue;
+}
+
+.third {
+  background-color: green;
+}
