@@ -7,14 +7,37 @@ namespace CSbasicsGraceHopper
     {
         static void Main(string[] args)
         {
-            List<int> numbers = getNumbersUntil(20);
-            int max = findMax2(numbers);
+            //Console.WriteLine("Hello " + "world");
 
-            Console.WriteLine($"A legnagyobb szam: {max}");
+            //List<int> numbers = getNumbersUntil(20);
+            //int max = findMax2(numbers);
+            //Console.WriteLine($"A legnagyobb szam: {max}");
+
+            switchExample("asdasd");
+            
+        }
+
+        private static void switchExample(string text)
+        {
+            switch (text)
+            {
+                case "alma":
+                case "korte":
+                    Console.WriteLine("gyumolcs");
+                    break;
+                case "repa":
+                case "karfiol":
+                    Console.WriteLine("zoldseg");
+                    break;
+                default:
+                    Console.WriteLine("nem tudni");
+                    break;
+            }
         }
 
         private static int findMax2(List<int> numbers)
         {
+            // O(nlogn)
             numbers.Sort();
             return numbers[numbers.Count - 1];
         }
@@ -23,6 +46,7 @@ namespace CSbasicsGraceHopper
         {
             int max = 0;
 
+            // O(n)
             foreach (int number in numbers)
             {
                 if (number > max)
@@ -30,7 +54,7 @@ namespace CSbasicsGraceHopper
                     max = number;
                 }
             }
-
+            
             return max;
         }
 
