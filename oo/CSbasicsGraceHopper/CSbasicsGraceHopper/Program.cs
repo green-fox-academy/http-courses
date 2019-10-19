@@ -15,7 +15,18 @@ namespace CSbasicsGraceHopper
 
             switchExample("asdasd");
             string alma = "alma";
-            
+
+            int[][] matrix = {
+                new int[] { 1, 2, 3 },
+                new int[] { 4, 5, 6, 7 }
+            };
+            Console.WriteLine(matrix[1][2]);
+
+            int[,] matrix2 = {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+            };
+            Console.WriteLine(matrix2[1, 2]);
             
         }
 
