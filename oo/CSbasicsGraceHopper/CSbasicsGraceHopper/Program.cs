@@ -7,13 +7,15 @@ namespace CSbasicsGraceHopper
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello " + "world");
+            Console.WriteLine("Hello " + "world");
 
-            //List<int> numbers = getNumbersUntil(20);
-            //int max = findMax2(numbers);
-            //Console.WriteLine($"A legnagyobb szam: {max}");
+            List<int> numbers = getNumbersUntil(20);
+            int max = findMax(numbers);
+            Console.WriteLine($"A legnagyobb szam: {max}");
 
             switchExample("asdasd");
+            string alma = "alma";
+            
             
         }
 
