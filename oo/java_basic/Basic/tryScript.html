@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+</head>
+
+<body>
+<div id="cont1" class="cont">
+    <h2 id="oneforall">korte</h2>
+</div>
+<div class="cont">
+    <h2>korte3</h2>
+</div>
+<button onclick="myFunction()">Try it</button>
+
+</body>
+
+<script>
+    document.getElementById("oneforall").innerHTML = "New text!";
+    function myFunction() {
+        document.getElementById("cont1").style.backgroundColor = "green";
+        document.getElementsByTagName("h2").style.backgroundColor = "blue";
+        console.log(matches);
+    }
+
+</script>
+
