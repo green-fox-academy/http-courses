@@ -6,7 +6,9 @@ namespace Workshop9esFeladatGraceHopper
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PostIt sarga = new PostIt("sarga", "Első ötlet", "kek");
+            PostIt rozsaszin = new PostIt("rozsaszin", "Hurrá!", "fekete");
+            PostIt zold = new PostIt("zold", "Szuper!", "barna");
         }
     }
 }
