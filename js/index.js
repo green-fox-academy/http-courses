@@ -3,6 +3,7 @@ let paragraphs2 = document.querySelectorAll('.bekezdes, .masik');
 
 for (let p of paragraphs2) {
   p.innerHTML = parseInt(p.innerHTML) + 1;
+  p.onclick = () => alert(p.innerHTML);
 }
 
 paragraphs2[paragraphs2.length - 1].innerHTML += '<a href="#">link</a>';
