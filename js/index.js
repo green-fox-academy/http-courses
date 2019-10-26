@@ -1,5 +1,7 @@
 let paragraphs = document.getElementsByClassName('bekezdes');
-for (let p of paragraphs) {
+let paragraphs2 = document.querySelectorAll('.bekezdes');
+
+for (let p of paragraphs2) {
   p.innerHTML = parseInt(p.innerHTML) + 1;
 }
 
