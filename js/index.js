@@ -1,4 +1,9 @@
-window.onload = callbackExample();
+window.onload = promiseExample();
+
+function promiseExample() {
+  let request = fetch('https://jsonplaceholder.typicode.com/users');
+  request.then((users) => users.json().then((u) => addUsers(u)));
+}
 
 function callbackExample() {
   let xhr = new XMLHttpRequest();
@@ -10,18 +15,21 @@ function callbackExample() {
   
     if (xhr.status == 200) {
       console.log('most erkezett meg az adat');
-    
       let users = JSON.parse(xhr.responseText);
-      let ul = document.getElementById('users');
-
-      for (let user of users) {
-        const li = document.createElement('li');
-        li.innerText = user.name;
-        ul.appendChild(li);
-      }
+      addUsers(users);
     }
   };
   console.log('most kuldtuk el a requestet');
+}
+
+function addUsers(users) {
+  let ul = document.getElementById('users');
+
+  for (let user of users) {
+    const li = document.createElement('li');
+    li.innerText = user.name;
+    ul.appendChild(li);
+  }
 }
 
 function domManipulation() {
