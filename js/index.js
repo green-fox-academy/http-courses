@@ -1,4 +1,10 @@
-window.onload = promiseExample();
+window.onload = asyncAwaitExample();
+
+async function asyncAwaitExample() {
+  let respone = await fetch('https://jsonplaceholder.typicode.com/users');
+  let users = await respone.json();
+  addUsers(users);
+}
 
 function promiseExample() {
   let request = fetch('https://jsonplaceholder.typicode.com/users');
