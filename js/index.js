@@ -1,4 +1,26 @@
-window.onload = asyncAwaitExample();
+window.onload = sendRequest({
+  "userId": 13,
+  "id": 13,
+  "title": "User title",
+  "body": "User body"
+});
+
+async function sendRequest(data) {
+  let respone = await fetch(
+    'https://jsonplaceholder.typicode.com/posts',
+    {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    }
+  );
+  let responseText = await respone.json();
+  console.log(responseText);
+  
+}
 
 async function asyncAwaitExample() {
   let respone = await fetch('https://jsonplaceholder.typicode.com/users');
