@@ -1,4 +1,28 @@
-window.onload = domManipulation();
+window.onload = callbackExample();
+
+function callbackExample() {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+  xhr.send();
+
+  xhr.onload = () => {
+    console.log('aaa');
+  
+    if (xhr.status == 200) {
+      console.log('most erkezett meg az adat');
+    
+      let users = JSON.parse(xhr.responseText);
+      let ul = document.getElementById('users');
+
+      for (let user of users) {
+        const li = document.createElement('li');
+        li.innerText = user.name;
+        ul.appendChild(li);
+      }
+    }
+  };
+  console.log('most kuldtuk el a requestet');
+}
 
 function domManipulation() {
   let paragraphs = document.getElementsByClassName('bekezdes');
