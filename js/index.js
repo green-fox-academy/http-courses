@@ -14,4 +14,8 @@ paragraphs2[paragraphs2.length - 1].appendChild(link);
 
 const cim = document.getElementById('cim').innerHTML;
 
-console.log(cim);
+function printHello() {
+  console.log('hello');
+}
+
+
