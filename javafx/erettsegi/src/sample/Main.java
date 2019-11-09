@@ -13,11 +13,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
-        System.out.println("Hello");
         List<String> fajlTartalom = fajlbeolvasas("egyszamjatek1.txt");
         List<Jatekos> jatekosok = jatekosBeolvasas(fajlTartalom);
-        
+
+        System.out.printf("3. feladat: Jatekosok szama: %d fo", jatekosok.size());
 //        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 //        primaryStage.setTitle("Hello World");
 //        primaryStage.setScene(new Scene(root, 300, 275));
