@@ -9,7 +9,7 @@
 <?import javafx.scene.control.Label?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="178.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label layoutX="28.0" layoutY="42.0" text="Jatekos neve:" />
       <Label layoutX="28.0" layoutY="78.0" text="Jatekos tippjei:" />
@@ -17,5 +17,8 @@
       <TextField id="tippekTextField" fx:id="tippekTextField" layoutX="138.0" layoutY="73.0" onKeyReleased="#tippSzamlalo" prefHeight="27.0" prefWidth="231.0" />
       <Label id="tippekLabel" fx:id="tippekLabel" layoutX="387.0" layoutY="78.0" text="0 db" />
       <Button layoutX="133.0" layoutY="118.0" mnemonicParsing="false" onAction="#jatekosMentese" prefHeight="27.0" prefWidth="242.0" text="Jatekos hozzaadasa" />
+      <Button id="listazzButton" fx:id="listazzButton" layoutX="401.0" layoutY="118.0" mnemonicParsing="false" onAction="#nevekListazasa" text="Listazz" />
+      <ComboBox id="namesComboBox" fx:id="namesComboBox" layoutX="58.0" layoutY="172.0" prefWidth="150.0" />
+      <ListView id="nevLista" fx:id="nevLista" layoutX="21.0" layoutY="211.0" prefHeight="243.0" prefWidth="472.0" />
    </children>
 </AnchorPane>

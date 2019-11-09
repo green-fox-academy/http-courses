@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 import java.io.IOException;
+import java.nio.Buffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.OpenOption;
@@ -21,12 +22,26 @@ public class Controller {
   private TextField jatekosNevTextField;
   @FXML
   private Label tippekLabel;
+  @FXML
+  private Button listazzButton;
+  @FXML
+  private ComboBox namesComboBox;
+  @FXML
+  private ListView nevLista;
 
   List<Jatekos> jatekosok;
 
   public Controller() {
     List<String> fajltartalom = fajlbeolvasas(fajlNev);
     jatekosok = jatekosBeolvasas(fajltartalom);
+  }
+
+  @FXML
+  private void nevekListazasa() {
+    for (Jatekos jatekos : jatekosok) {
+      namesComboBox.getItems().add(jatekos.name);
+      nevLista.getItems().add(jatekos.name);
+    }
   }
 
   @FXML
