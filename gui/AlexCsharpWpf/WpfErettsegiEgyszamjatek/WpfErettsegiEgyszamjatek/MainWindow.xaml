@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfErettsegiEgyszamjatek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfErettsegiEgyszamjatek"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500">
+    <Grid>
+        <Button Name="btn_Hozzaad" Content="Játékos Hozzáadása" HorizontalAlignment="Left" Margin="138,129,0,0" VerticalAlignment="Top" Width="168" Click="Btn_Hozzaad_Click"/>
+        <Label Content="Játékos neve: " HorizontalAlignment="Left" Margin="37,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tippek: " HorizontalAlignment="Left" Margin="69,98,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbx_Nev" HorizontalAlignment="Left" Height="23" Margin="125,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+        <TextBox Name="tbx_Tippek" HorizontalAlignment="Left" Height="23" Margin="125,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" TextChanged="Tbx_Tippek_TextChanged"/>
+        <Label Name="lb_Fordulo" Content="0 db" HorizontalAlignment="Left" Margin="342,83,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
