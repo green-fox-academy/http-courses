@@ -26,8 +26,9 @@
             <PasswordField id="passwordField" fx:id="passwordField" layoutX="247.0" layoutY="173.0" />
             <Label layoutX="165.0" layoutY="178.0" text="Password:" />
             <TextField id="usernameTextField" fx:id="usernameTextField" layoutX="245.0" layoutY="123.0" />
-            <Button layoutX="271.0" layoutY="235.0" mnemonicParsing="false" onAction="#signIn" text="Sign in" />
+            <Button layoutX="270.0" layoutY="255.0" mnemonicParsing="false" onAction="#signIn" text="Sign in" />
             <Label layoutX="159.0" layoutY="128.0" text="User name:" />
+            <CheckBox id="termsOfUseCheckbox" fx:id="termsOfUseCheckbox" layoutX="216.0" layoutY="219.0" mnemonicParsing="false" text="Felhasznalasi feltetelek" />
          </children>
       </AnchorPane>
       <AnchorPane id="profilePane" fx:id="profilePane" prefHeight="400.0" prefWidth="600.0" visible="false">

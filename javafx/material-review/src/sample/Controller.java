@@ -1,10 +1,7 @@
 package sample;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 public class Controller {
@@ -21,6 +18,8 @@ public class Controller {
   Label successLabel;
   @FXML
   Label profileUserNameLabel;
+  @FXML
+  CheckBox termsOfUseCheckbox;
 
   @FXML
   private void signIn() {
@@ -30,6 +29,8 @@ public class Controller {
       showError("Nincs felhasznalonev megadva");
     } else if (!password.equals("jelszo")) {
       showError("Nem megfelelo jelszo");
+    } else if (!termsOfUseCheckbox.isSelected()) {
+      showError("Nem fogadtad el a felhasznalasi felteteleket!");
     } else {
       loginPane.setVisible(false);
       profileUserNameLabel.setText(userName);
