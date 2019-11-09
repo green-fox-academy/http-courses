@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane id="loginPane" fx:id="loginPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label id="successLabel" fx:id="successLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="600.0" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="57.0" text="My awesome login page" textAlignment="CENTER">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <PasswordField id="passwordField" fx:id="passwordField" layoutX="247.0" layoutY="173.0" />
+            <Label layoutX="165.0" layoutY="178.0" text="Password:" />
+            <TextField id="usernameTextField" fx:id="usernameTextField" layoutX="245.0" layoutY="123.0" />
+            <Button layoutX="270.0" layoutY="255.0" mnemonicParsing="false" onAction="#signIn" text="Sign in" />
+            <Label layoutX="159.0" layoutY="128.0" text="User name:" />
+            <CheckBox id="termsOfUseCheckbox" fx:id="termsOfUseCheckbox" layoutX="216.0" layoutY="219.0" mnemonicParsing="false" text="Felhasznalasi feltetelek" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="profilePane" fx:id="profilePane" prefHeight="400.0" prefWidth="600.0" visible="false">
+         <children>
+            <Label layoutX="190.0" layoutY="32.0" text="Profile page">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <Label id="profileUserNameLabel" fx:id="profileUserNameLabel" layoutX="284.0" layoutY="143.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
