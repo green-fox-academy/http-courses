@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfDemoApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
+        mc:Ignorable="d"
+        Title="Sziasztok" Height="350" Width="400">
+    <Grid>
+        <Button Name="btn_Valtoztatas" Content="Hozzáadás" HorizontalAlignment="Left" Margin="28,61,0,0" VerticalAlignment="Top" Width="75"  Click="Btn_Valtoztatas_Click" Height="23"/>
+        <TextBox Name="tbx_FeladatNev" HorizontalAlignment="Left" Height="23" Margin="115,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="Tbx_FeladatNev_KeyDown" />
+        <ListBox Name="lbx_Feladatok" HorizontalAlignment="Left" Height="144" Margin="28,96,0,0" VerticalAlignment="Top" Width="207"/>
+        <Button Name="btn_Torles" Content="Törlés" HorizontalAlignment="Left" Margin="240,96,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Torles_Click"/>
+        <Button Name="btn_Mentes" Content="Mentés" HorizontalAlignment="Left" Margin="240,120,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Mentes_Click"/>
+
+    </Grid>
+</Window>
