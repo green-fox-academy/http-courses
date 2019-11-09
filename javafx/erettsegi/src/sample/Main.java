@@ -22,11 +22,22 @@ public class Main extends Application {
         Scanner scanner = new Scanner(System.in);
         System.out.print("4. feladat: Kerem a fordulo sorszamat: ");
         int forduloSzama = scanner.nextInt();
-        System.out.println(forduloSzama);
+
+        float atlag = atlagAForduloban(forduloSzama, jatekosok);
+        System.out.printf("5. feladat: A megadott fordulo tippjeinek atlaga: %.2f\n", atlag);
+
 //        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 //        primaryStage.setTitle("Hello World");
 //        primaryStage.setScene(new Scene(root, 300, 275));
 //        primaryStage.show();
+    }
+
+    private float atlagAForduloban(int forduloSzam, List<Jatekos> jatekosok) {
+        float osszeg = 0;
+        for (Jatekos jatekos : jatekosok) {
+            osszeg += jatekos.tippek[forduloSzam - 1];
+        }
+        return osszeg / jatekosok.size();
     }
 
     private List<Jatekos> jatekosBeolvasas(List<String> fajlTartalom) {
