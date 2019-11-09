@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -62,7 +63,7 @@ public class Main extends Application {
 
     private List<String> fajlbeolvasas(String fajlNev) {
         try {
-            return Files.readAllLines(Paths.get(fajlNev));
+            return Files.readAllLines(Paths.get(fajlNev), Charset.forName("utf-8"));
         } catch (IOException e) {
             System.err.println("Nem sikerult beolvasni a fajlt.");
             return new ArrayList<>();
