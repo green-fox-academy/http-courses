@@ -16,12 +16,32 @@ public class Main extends Application {
 
         System.out.println("Hello");
         List<String> fajlTartalom = fajlbeolvasas("egyszamjatek1.txt");
-        System.out.println(fajlTartalom);
-
+        List<Jatekos> jatekosok = jatekosBeolvasas(fajlTartalom);
+        
 //        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 //        primaryStage.setTitle("Hello World");
 //        primaryStage.setScene(new Scene(root, 300, 275));
 //        primaryStage.show();
+    }
+
+    private List<Jatekos> jatekosBeolvasas(List<String> fajlTartalom) {
+        List<Jatekos> jatekosok = new ArrayList<>();
+        for (String jatekosSzoveg : fajlTartalom) {
+            String[] jatekosAdatok = jatekosSzoveg.split(" ");
+            String nev = jatekosAdatok[0];
+            int[] tippek = jatekosTippekBegyujtese(jatekosAdatok);
+            Jatekos jatekos = new Jatekos(nev, tippek);
+            jatekosok.add(jatekos);
+        }
+        return jatekosok;
+    }
+
+    private int[] jatekosTippekBegyujtese(String[] jatekosAdatok) {
+        int[] tippek = new int[jatekosAdatok.length - 1];
+        for (int i = 1; i < jatekosAdatok.length; i++) {
+            tippek[i - 1] = Integer.parseInt(jatekosAdatok[i]);
+        }
+        return tippek;
     }
 
     private List<String> fajlbeolvasas(String fajlNev) {
