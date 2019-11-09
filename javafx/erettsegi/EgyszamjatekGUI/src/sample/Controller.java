@@ -6,12 +6,15 @@ import javafx.scene.control.*;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
+import java.nio.file.OpenOption;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Controller {
 
+  private static final String fajlNev = "egyszamjatek2.txt";
   @FXML
   private TextField tippekTextField;
   @FXML
@@ -22,7 +25,7 @@ public class Controller {
   List<Jatekos> jatekosok;
 
   public Controller() {
-    List<String> fajltartalom = fajlbeolvasas("egyszamjatek2.txt");
+    List<String> fajltartalom = fajlbeolvasas(fajlNev);
     jatekosok = jatekosBeolvasas(fajltartalom);
   }
 
@@ -53,6 +56,33 @@ public class Controller {
     if (tippekSzama != jatekosok.get(0).tippek.length) {
       errorUzenet("A tippek szama nem megfelelo");
       return;
+    }
+
+    fajlhozIras(fajlNev, nev + " " + tippekSzoveg.trim() + "\r\n");
+    infoUzenet("Az allomany bovitese sikeres volt");
+    mezokTartalmanakTorlese();
+  }
+
+  private void mezokTartalmanakTorlese() {
+    jatekosNevTextField.setText("");
+    tippekTextField.setText("");
+    tippekLabel.setText("0 db");
+  }
+
+  private void infoUzenet(String uzenet) {
+    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+    alert.setTitle("Uzenet");
+    alert.setHeaderText("");
+    alert.setContentText(uzenet);
+    alert.showAndWait();
+  }
+
+  private void fajlhozIras(String fajlNev, String ujSor) {
+    try {
+      Files.write(Paths.get(fajlNev), ujSor.getBytes(), StandardOpenOption.APPEND);
+    } catch (IOException e) {
+      System.err.println("Nem sikerult fajba irni");
+      System.exit(1);
     }
   }
 
