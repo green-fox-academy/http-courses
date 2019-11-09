@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main extends Application {
 
@@ -16,7 +17,12 @@ public class Main extends Application {
         List<String> fajlTartalom = fajlbeolvasas("egyszamjatek1.txt");
         List<Jatekos> jatekosok = jatekosBeolvasas(fajlTartalom);
 
-        System.out.printf("3. feladat: Jatekosok szama: %d fo", jatekosok.size());
+        System.out.printf("3. feladat: Jatekosok szama: %d fo\n", jatekosok.size());
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("4. feladat: Kerem a fordulo sorszamat: ");
+        int forduloSzama = scanner.nextInt();
+        System.out.println(forduloSzama);
 //        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 //        primaryStage.setTitle("Hello World");
 //        primaryStage.setScene(new Scene(root, 300, 275));
