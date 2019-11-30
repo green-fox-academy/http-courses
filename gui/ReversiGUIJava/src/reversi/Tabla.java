@@ -19,6 +19,7 @@ public class Tabla {
 
   private Stage stage;
   private char[][] allas;
+  private Korong aktualisJatekos;
 
   public Tabla(String fajlNev, Stage stage) {
     this.stage = stage;
@@ -56,20 +57,25 @@ public class Tabla {
     return event -> {
       Circle kor = ((Circle) event.getSource());
       Korong korong = (Korong) kor.getUserData();
-      String jatekosSzine = "";
-      switch (korong.jatekos) {
-        case 'F':
-          jatekosSzine = " - FEHÉR";
-          break;
-        case 'K':
-          jatekosSzine = " - KÉK";
-          break;
-        default:
-          jatekosSzine = "";
+      if (korong.jatekos == '#' && aktualisJatekos != null) {
+        szabalyosEllenorzes(korong);
+      } else {
+        jatekosBeallitasa(korong);
       }
-      String cim = "Reversi" + jatekosSzine;
-      stage.setTitle(cim);
     };
+  }
+
+  private void szabalyosEllenorzes(Korong korong) {
+    String szabalyosSzoveg = szabalyosLepes(aktualisJatekos.jatekos, korong.sor, korong.oszlop)
+            ? " > SZABÁLYOS" : " > SZABÁLYTALAN";
+    stage.setTitle("Reversi - " + aktualisJatekos.szinNev + szabalyosSzoveg);
+  }
+
+  private void jatekosBeallitasa(Korong korong) {
+    aktualisJatekos = korong;
+    String jatekosSzine = " - " + korong.szinNev;
+    String cim = "Reversi" + jatekosSzine;
+    stage.setTitle(cim);
   }
 
   public boolean szabalyosLepes(char jatekos, int sor, int oszlop) {
