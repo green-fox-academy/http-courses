@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Tabla tabla = new Tabla("assets/allas.txt");
+        Tabla tabla = new Tabla("assets/allas.txt", primaryStage);
         Group root = new Group();
         primaryStage.setTitle("Reversi");
         primaryStage.setScene(new Scene(root, width, height));
