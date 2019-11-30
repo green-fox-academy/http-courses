@@ -43,6 +43,33 @@ public class Tabla {
     }
   }
 
+  public boolean vanForditas(char jatekos, int sor, int oszlop, int iranySor, int iranyOszlop) {
+    int aktSor, aktOszlop;
+    char ellenfel;
+    boolean nincsEllenfel;
+    aktSor = sor + iranySor;
+    aktOszlop = oszlop + iranyOszlop;
+    ellenfel = 'K';
+    if (jatekos == 'K') {
+      ellenfel = 'F';
+    }
+    nincsEllenfel = true;
+    while (aktSor > 0 && aktSor < allas.length
+            && aktOszlop > 0 && aktOszlop < allas.length
+            && allas[aktSor][aktOszlop] == ellenfel) {
+      aktSor += iranySor;
+      aktOszlop += iranyOszlop;
+      nincsEllenfel = false;
+    }
+    if (nincsEllenfel
+            || aktSor < 0 || aktSor > allas.length - 1
+            || aktOszlop < 0 || aktOszlop > allas.length - 1
+            || allas[aktSor][aktOszlop] != jatekos) {
+      return false;
+    }
+    return true;
+  }
+
   private Color korongSzin(char c) {
     if (c == 'F') {
       return Color.WHITE;
