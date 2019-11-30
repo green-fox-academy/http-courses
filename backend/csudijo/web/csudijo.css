@@ -1,0 +1,43 @@
+nav {
+    font-weight: 500;
+}
+
+#fejlec {
+    height: 100vh;
+    min-height: 500px;
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: 300;
+}
+
+h2 {
+    padding-top: 10px;
+    font-weight: 300
+}
+
+section {
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 15px;
+}
+
+a:link,
+a:visited {
+    color: rgb(236, 236, 236);
+    ;
+}
+
+a:hover,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    height: 100% !important;
+}
+
+.szurke-hatter {
+    background-color: rgb(236, 236, 236);
+}
