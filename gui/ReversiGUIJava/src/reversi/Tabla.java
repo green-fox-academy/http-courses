@@ -43,6 +43,18 @@ public class Tabla {
     }
   }
 
+  public boolean szabalyosLepes(char jatekos, int sor, int oszlop) {
+    if (allas[sor][oszlop] != '#') return false;
+    for (int sorIrany = -1; sorIrany <= 1; sorIrany++) {
+      for (int oszlopIrany = -1; oszlopIrany <= 1; oszlopIrany++) {
+        if (vanForditas(jatekos, sor, oszlop, sorIrany, oszlopIrany)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
   public boolean vanForditas(char jatekos, int sor, int oszlop, int iranySor, int iranyOszlop) {
     int aktSor, aktOszlop;
     char ellenfel;
