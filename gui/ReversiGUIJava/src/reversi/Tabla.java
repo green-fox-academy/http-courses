@@ -72,6 +72,7 @@ public class Tabla {
   }
 
   private void jatekosBeallitasa(Korong korong) {
+    if (korong.jatekos == '#') return;
     aktualisJatekos = korong;
     String jatekosSzine = " - " + korong.szinNev;
     String cim = "Reversi" + jatekosSzine;
