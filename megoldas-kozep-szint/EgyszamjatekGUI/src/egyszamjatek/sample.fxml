@@ -9,13 +9,13 @@
 <?import javafx.scene.control.Label?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="egyszamjatek.Controller">
    <children>
       <Label layoutX="38.0" layoutY="50.0" text="Jatekos neve:" />
       <Label layoutX="38.0" layoutY="88.0" text="Jatekos tippjei:" />
       <TextField layoutX="153.0" layoutY="45.0" />
-      <TextField layoutX="153.0" layoutY="83.0" prefHeight="27.0" prefWidth="267.0" />
-      <Label layoutX="433.0" layoutY="88.0" text="0 db" />
+      <TextField id="tipsTextField" fx:id="tipsTextField" layoutX="153.0" layoutY="83.0" onKeyReleased="#updateTipsCount" prefHeight="27.0" prefWidth="267.0" />
+      <Label id="tipsLabel" fx:id="tipsLabel" layoutX="433.0" layoutY="88.0" text="0 db" />
       <Button layoutX="153.0" layoutY="129.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="180.0" text="Jatekos hozzaadasa" />
    </children>
 </AnchorPane>
