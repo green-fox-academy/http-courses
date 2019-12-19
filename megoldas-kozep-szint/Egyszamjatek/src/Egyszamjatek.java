@@ -4,6 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Egyszamjatek {
 
@@ -17,6 +18,12 @@ public class Egyszamjatek {
 
     // 3. feladat
     System.out.printf("3. feladat: Jatekosok szama: %d fo\n", players.size());
+
+    // 4. feladat
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("4. feladat: Kerem a fordulo sorszamat: ");
+    int turnIndex = scanner.nextInt();
+    
 
   }
 
