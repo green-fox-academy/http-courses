@@ -11,9 +11,12 @@ public class Egyszamjatek {
 
   public static void main(String[] args) {
 
-    // 1. feladat
+    // 2. feladat
     List<String> fileContent = readFile(gameFile);
     List<Player> players = parsePlayers(fileContent);
+
+    // 3. feladat
+    System.out.printf("3. feladat: Jatekosok szama: %d fo\n", players.size());
 
   }
 
