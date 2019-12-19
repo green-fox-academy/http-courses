@@ -6,6 +6,7 @@ import javafx.scene.control.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -39,18 +40,37 @@ public class Controller {
   @FXML
   public void addPlayer() {
     String playerName = playerNameTextField.getText();
-    String[] playerTipStrings = tipsTextField.getText().split(" ");
+    String playerTipStrings = tipsTextField.getText();
 
     boolean isPlayerNameValid = validatePlayerName(playerName);
-    boolean isTipsCountValid = validateTipsCount(playerTipStrings);
+    if (!isPlayerNameValid) return;
 
-    if (!isPlayerNameValid || !isTipsCountValid) return;
+    boolean isTipsCountValid = validateTipsCount(playerTipStrings.split(" "));
+    if (!isTipsCountValid) return;
 
-    List<Integer> tips = parseTips(playerTipStrings);
-    
-    Player newPlayer = new Player(playerName);
-    newPlayer.tips = tips;
+    boolean isFileWriteSuccessful = writeFile(gameFile, playerName + " " + playerTipStrings);
+    if (isFileWriteSuccessful) {
+      showInfo("Az allomany bovitese sikeres volt!");
+      clearFields();
+    }
 
+  }
+
+  private void clearFields() {
+    playerNameTextField.clear();
+    tipsTextField.clear();
+    tipsLabel.setText("0 db");
+  }
+
+  private boolean writeFile(String fileName, String newLine) {
+    List<String> newContent = Arrays.asList(newLine);
+    try {
+      Files.write(Paths.get(fileName), newContent, StandardOpenOption.APPEND);
+      return true;
+    } catch (IOException e) {
+      System.err.println("Nem sikerult a file irasa.");
+      return false;
+    }
   }
 
   private boolean validateTipsCount(String[] playerTipStrings) {
@@ -70,6 +90,14 @@ public class Controller {
       }
     }
     return true;
+  }
+
+  private void showInfo(String content) {
+    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+    alert.setTitle("Uzenet");
+    alert.setHeaderText("");
+    alert.setContentText(content);
+    alert.showAndWait();
   }
 
   private void showError(String content) {

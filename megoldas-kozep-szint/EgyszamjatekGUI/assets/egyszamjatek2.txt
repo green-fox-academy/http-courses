@@ -7,3 +7,6 @@ Anna 3 1 2 6
 Mari 1 2 1 2
 Rita 3 2 6 7
 Gabi 2 7 5 6
+Peti 1 2 3 4
+Lara 2 3 4 5
+Johny 3 4 5 6
