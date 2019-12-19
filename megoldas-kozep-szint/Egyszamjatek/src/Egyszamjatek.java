@@ -22,9 +22,21 @@ public class Egyszamjatek {
     // 4. feladat
     Scanner scanner = new Scanner(System.in);
     System.out.print("4. feladat: Kerem a fordulo sorszamat: ");
-    int turnIndex = scanner.nextInt();
-    
+    int turnIndex = scanner.nextInt() - 1;
 
+    // 5. feladat
+    float average = calculateAverage(players, turnIndex);
+    System.out.printf("5. feladat: A megadott fordulo tippjeinek atlaga: %.2f\n", average);
+
+  }
+
+  private static float calculateAverage(List<Player> players, int turnIndex) {
+    int sumTips = 0;
+    for (Player player : players) {
+      sumTips += player.tips.get(turnIndex);
+    }
+    float average = (float) sumTips / players.size();
+    return average;
   }
 
   private static List<Player> parsePlayers(List<String> fileContent) {
