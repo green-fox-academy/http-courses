@@ -13,9 +13,9 @@
    <children>
       <Label layoutX="38.0" layoutY="50.0" text="Jatekos neve:" />
       <Label layoutX="38.0" layoutY="88.0" text="Jatekos tippjei:" />
-      <TextField layoutX="153.0" layoutY="45.0" />
+      <TextField id="playerNameTextField" fx:id="playerNameTextField" layoutX="153.0" layoutY="45.0" />
       <TextField id="tipsTextField" fx:id="tipsTextField" layoutX="153.0" layoutY="83.0" onKeyReleased="#updateTipsCount" prefHeight="27.0" prefWidth="267.0" />
       <Label id="tipsLabel" fx:id="tipsLabel" layoutX="433.0" layoutY="88.0" text="0 db" />
-      <Button layoutX="153.0" layoutY="129.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="180.0" text="Jatekos hozzaadasa" />
+      <Button layoutX="153.0" layoutY="129.0" mnemonicParsing="false" onAction="#addPlayer" prefHeight="27.0" prefWidth="180.0" text="Jatekos hozzaadasa" />
    </children>
 </AnchorPane>
