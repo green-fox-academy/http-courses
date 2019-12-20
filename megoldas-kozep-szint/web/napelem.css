@@ -1,5 +1,6 @@
 #panelek img {
   height: 40px;
+  margin: 2px;
 }
 
 label {
@@ -51,4 +52,8 @@ input[type=number] {
   background: darkblue; 
   cursor: pointer;
   border-radius: 8px;
+}
+
+.fk {
+  font-weight: bold;
 }
