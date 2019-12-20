@@ -52,3 +52,7 @@ input[type=number] {
   cursor: pointer;
   border-radius: 8px;
 }
+
+.fk {
+  font-weight: bold;
+}
