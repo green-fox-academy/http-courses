@@ -11,6 +11,10 @@ WHERE etel = 1;
 
 ***
 17. feladat
+SELECT termekek.nev, ar
+FROM termekek JOIN kategoriak ON kategoriaId = kategoriak.id
+WHERE kategoriak.nev = "Desszertek"
+ORDER BY termekek.nev;
 
 ***
 18. feladat
