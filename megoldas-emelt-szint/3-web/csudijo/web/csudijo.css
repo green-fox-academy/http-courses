@@ -53,3 +53,7 @@ body {
 #motto {
   font-size: 3em;
 }
+
+#rolunk img {
+  max-width: 100%;
+}
