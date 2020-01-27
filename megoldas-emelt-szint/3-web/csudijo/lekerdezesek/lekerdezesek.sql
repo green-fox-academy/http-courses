@@ -18,6 +18,8 @@ ORDER BY termekek.nev;
 
 ***
 18. feladat
+INSERT INTO termekek (nev, ar, kategoriaId, etel) VALUES
+  ("Málnahabos pohárkrém", 1090, 6, 1);
 
 ***
 19. feladat
