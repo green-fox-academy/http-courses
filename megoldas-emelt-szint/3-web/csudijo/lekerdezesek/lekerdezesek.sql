@@ -23,6 +23,13 @@ INSERT INTO termekek (nev, ar, kategoriaId, etel) VALUES
 
 ***
 19. feladat
+SELECT termekNev AS nev, ROUND(SUM(mennyiseg), 0) AS mennyiseg
+FROM rendelesek JOIN termekek ON termekId = termekek.id
+WHERE MONTH(datum) = 2
+AND etel = 1
+GROUP BY termekNev
+ORDER BY mennyiseg DESC
+LIMIT 3;
 
 ***
 20. feladat
