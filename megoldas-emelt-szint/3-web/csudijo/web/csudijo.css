@@ -49,3 +49,7 @@ a:active {
 body {
   line-height: 1.8;
 }
+
+#motto {
+  font-size: 3em;
+}
