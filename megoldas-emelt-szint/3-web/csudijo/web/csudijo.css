@@ -3,6 +3,10 @@ nav {
 }
 
 #fejlec {
+    background-image: url('kepek/etterem.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
     height: 100vh;
     min-height: 500px;
 }
