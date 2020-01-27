@@ -33,4 +33,6 @@ LIMIT 3;
 
 ***
 20. feladat
-
+SELECT ROUND(SUM(termekAr * mennyiseg), 0) AS brutto,
+       ROUND(SUM(termekAr * mennyiseg * ( 1 - 1 / (1 + afakulcs))), 0) AS afa
+FROM rendelesek;
