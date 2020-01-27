@@ -41,3 +41,7 @@ a:active {
 .szurke-hatter {
     background-color: rgb(236, 236, 236);
 }
+
+body {
+  line-height: 1.8;
+}
