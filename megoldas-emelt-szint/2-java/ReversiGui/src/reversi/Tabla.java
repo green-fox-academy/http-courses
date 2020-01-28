@@ -38,6 +38,30 @@ public class Tabla {
     }
   }
 
+  public boolean vanForditas(char jatekos, int sor, int oszlop, int iranySor, int iranyOszlop) {
+    int aktSor, aktOszlop;
+    char ellenfel;
+    boolean nincsEllenfel;
+    aktSor = sor + iranySor;
+    aktOszlop = oszlop + iranyOszlop;
+    ellenfel = 'K';
+    if (jatekos == 'K') {
+      ellenfel = 'F';
+    }
+    nincsEllenfel = true;
+    while (aktSor > 0 && aktSor < 8 && aktOszlop > 0 && aktOszlop < 8 &&
+            allas[aktSor][aktOszlop] == ellenfel) {
+      aktSor += iranySor;
+      aktOszlop += iranyOszlop;
+      nincsEllenfel = false;
+    }
+    if (nincsEllenfel || aktSor < 0 || aktSor > 7 || aktOszlop < 0 || aktOszlop > 7 ||
+            allas[aktSor][aktOszlop] != jatekos) {
+      return false;
+    }
+    return true;
+  }
+
   private Paint korSzin(char karakter) {
     if (karakter == '#') {
       return Color.DARKGRAY;
