@@ -22,6 +22,7 @@ public class Tabla {
   char[][] allas;
   Korong[][] korongok;
   Stage stage;
+  Korong kivalasztottJatekos;
 
   public Tabla(String fajlNev, Stage stage) {
     this.stage = stage;
@@ -49,11 +50,27 @@ public class Tabla {
   private EventHandler<MouseEvent> kattintas() {
     return event -> {
       Korong korong = (Korong)((Circle) event.getSource()).getUserData();
-      String magyarSzin = magyarSzin(korong.ertek);
-      if (!magyarSzin.isEmpty()) {
-        stage.setTitle("Reversi - " + magyarSzin);
+      String tablaCim = "Reversi";
+      if (korong.ertek != '#') {
+        tablaCim += jatekosKivalasztasa(korong);
       }
+      if (kivalasztottJatekos != null && korong.ertek == '#') {
+        tablaCim += lepes(kivalasztottJatekos, korong);
+      }
+      stage.setTitle(tablaCim);
     };
+  }
+
+  private String lepes(Korong kivalasztottJatekos, Korong korong) {
+    boolean szabalyosLepes = szabalyosLepes(kivalasztottJatekos.ertek, korong.sor, korong.oszlop);
+    String tablaCim = " - " + magyarSzin(kivalasztottJatekos.ertek);
+    tablaCim += " > " + (szabalyosLepes ? "SZABÁLYOS" : "SZABÁLYTALAN");
+    return tablaCim;
+  }
+
+  private String jatekosKivalasztasa(Korong korong) {
+    kivalasztottJatekos = korong;
+     return " - " + magyarSzin(korong.ertek);
   }
 
   private String magyarSzin(char karakter) {
