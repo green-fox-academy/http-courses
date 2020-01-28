@@ -1,4 +1,4 @@
-package sample;
+package reversi;
 
 public class Controller {
 }
