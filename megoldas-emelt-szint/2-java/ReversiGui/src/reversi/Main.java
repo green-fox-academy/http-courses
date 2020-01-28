@@ -12,7 +12,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Tabla tabla = new Tabla("allas.txt");
+        Tabla tabla = new Tabla("allas.txt", primaryStage);
         Group tablaElemek = new Group();
         tabla.megjelenit(tablaElemek);
 

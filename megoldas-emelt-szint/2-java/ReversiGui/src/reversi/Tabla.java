@@ -1,9 +1,12 @@
 package reversi;
 
+import javafx.event.EventHandler;
 import javafx.scene.Group;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,8 +20,11 @@ public class Tabla {
   public static final int KOR_MERET = 40;
 
   char[][] allas;
+  Korong[][] korongok;
+  Stage stage;
 
-  public Tabla(String fajlNev) {
+  public Tabla(String fajlNev, Stage stage) {
+    this.stage = stage;
     List<String> fajlTartalom = fajlBeolvasas(fajlNev);
     allas = kezdoAllas(fajlTartalom);
   }
@@ -33,8 +39,30 @@ public class Tabla {
                 KOR_MERET / 2,
                 korSzin
         );
+        kor.setUserData(korongok[i][j]);
+        kor.addEventHandler(MouseEvent.MOUSE_CLICKED, kattintas());
         tablaElemek.getChildren().add(kor);
       }
+    }
+  }
+
+  private EventHandler<MouseEvent> kattintas() {
+    return event -> {
+      Korong korong = (Korong)((Circle) event.getSource()).getUserData();
+      String magyarSzin = magyarSzin(korong.ertek);
+      if (!magyarSzin.isEmpty()) {
+        stage.setTitle("Reversi - " + magyarSzin);
+      }
+    };
+  }
+
+  private String magyarSzin(char karakter) {
+    if (karakter == 'F') {
+      return "FEHÉR";
+    } else if (karakter == 'K') {
+      return "KÉK";
+    } else {
+      return "";
     }
   }
 
@@ -87,8 +115,13 @@ public class Tabla {
     if (fajlTartalom.isEmpty()) return new char[8][8];
 
     char[][] allas = new char[fajlTartalom.size()][fajlTartalom.get(0).length()];
+    korongok = new Korong[fajlTartalom.size()][fajlTartalom.get(0).length()];
+
     for (int i = 0; i < fajlTartalom.size(); i++) {
       allas[i] = fajlTartalom.get(i).toCharArray();
+      for (int j = 0; j < allas[i].length; j++) {
+        korongok[i][j] = new Korong(i, j, allas[i][j]);
+      }
     }
     return allas;
   }
