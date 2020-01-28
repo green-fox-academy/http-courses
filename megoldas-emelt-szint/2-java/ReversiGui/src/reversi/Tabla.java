@@ -1,5 +1,10 @@
 package reversi;
 
+import javafx.scene.Group;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.Circle;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -8,11 +13,41 @@ import java.util.List;
 
 public class Tabla {
 
+  public static final int MEZO_MERET = 50;
+  public static final int KOR_MERET = 40;
+
   char[][] allas;
 
   public Tabla(String fajlNev) {
     List<String> fajlTartalom = fajlBeolvasas(fajlNev);
     allas = kezdoAllas(fajlTartalom);
+  }
+
+  public void megjelenit(Group tablaElemek) {
+    for (int i = 0; i < allas.length; i++) {
+      for (int j = 0; j < allas[i].length; j++) {
+        Paint korSzin = korSzin(allas[i][j]);
+        Circle kor = new Circle(
+                j * MEZO_MERET + MEZO_MERET / 2,
+                i * MEZO_MERET + MEZO_MERET / 2,
+                KOR_MERET / 2,
+                korSzin
+        );
+        tablaElemek.getChildren().add(kor);
+      }
+    }
+  }
+
+  private Paint korSzin(char karakter) {
+    if (karakter == '#') {
+      return Color.DARKGRAY;
+    } else if (karakter == 'F') {
+      return Color.WHITE;
+    } else if (karakter == 'K') {
+      return Color.BLUE;
+    } else {
+      return Color.LIGHTGRAY;
+    }
   }
 
   private char[][] kezdoAllas(List<String> fajlTartalom) {
