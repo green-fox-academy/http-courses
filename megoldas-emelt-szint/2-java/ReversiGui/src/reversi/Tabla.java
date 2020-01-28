@@ -62,6 +62,15 @@ public class Tabla {
     return true;
   }
 
+  public boolean szabalyosLepes(char jatekos, int lepesSor, int lepesOszlop) {
+    for (int i = -1; i <= 1; i++) {
+      for (int j = -1; j <= 1; j++) {
+        if (vanForditas(jatekos, lepesSor, lepesOszlop, i, j)) return true;
+      }
+    }
+    return false;
+  }
+
   private Paint korSzin(char karakter) {
     if (karakter == '#') {
       return Color.DARKGRAY;
