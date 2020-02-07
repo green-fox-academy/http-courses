@@ -12,7 +12,6 @@ emeltszintu-erettsegi
 *.ide
 *.ide-shm
 *.ide-wal
-*.csproj
 *.json
 
 # User-specific files
