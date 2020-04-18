@@ -1,4 +1,4 @@
-def rotateLeft(matrix):
+def rotate_left(matrix):
     output = []
     rowLength = len(matrix[0])
     for i in range(rowLength)[::-1]:
@@ -9,7 +9,7 @@ def rotateLeft(matrix):
 
     return output
 
-left = rotateLeft([
+left = rotate_left([
     [1,2,3],
     [4,5,6],
     [7,8,9]
