@@ -1,7 +1,9 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.nio.Buffer;
@@ -28,6 +30,8 @@ public class Controller {
   private ComboBox namesComboBox;
   @FXML
   private ListView nevLista;
+  @FXML
+  private AnchorPane basePane;
 
   List<Jatekos> jatekosok;
 
@@ -38,10 +42,24 @@ public class Controller {
 
   @FXML
   private void nevekListazasa() {
+    int y = 0;
     for (Jatekos jatekos : jatekosok) {
       namesComboBox.getItems().add(jatekos.name);
       nevLista.getItems().add(jatekos.name);
+
+      Button button = new Button();
+      button.setId(jatekos.name);
+      button.setText(jatekos.name);
+      button.setLayoutY(y);
+      button.setOnAction((event) -> buttonAction(event));
+      basePane.getChildren().add(button);
+      y += 30;
     }
+  }
+
+  private void buttonAction(ActionEvent event) {
+    Button button = (Button) (event.getSource());
+    System.out.println(button.getId());
   }
 
   @FXML

@@ -1,0 +1,7 @@
+Hálózatra kapcsolás
+A hálózatra kapcsolt napelemes rendszer felépítése és kapcsolódása:
+A napelemek egyenáramot termelnek
+Az inverter az egyenáramot 230V-os váltakozó árammá alakítja
+A kapcsolószekrényben csatlakozik a ház villamos rendszere és az inverter kimenete
+A napelem által megtermelt energiát a ház elfogyasztja
+Az oda-vissza mérõ óra rögzíti az el nem fogyasztott, hálózatba visszatáplált áram és az áramszolgáltatótól átvett áram mennyiségét
