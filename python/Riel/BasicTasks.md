@@ -36,7 +36,7 @@ print(b);
 
 __Átlag:__
 
-- Kérj két számot a felhasználótól (az input() metódus segítségével)
+- Kérj két számot a felhasználótól (az `input()` metódus segítségével)
 - Nyomtasd ki a két szám összegét majd átlagát
 
 <br>
@@ -45,16 +45,16 @@ __Átlag:__
 
 __Páros vagy páratlan:__
 
-- Kérj egy számot a felhasználótól (az input() metódus segítségével)
-- Nyomtasd ki azt, hogy "Páros", ha a megadott szám páros, vagy azt, hogy "Páratlan", ha a szám páratlan
+- Kérj egy számot a felhasználótól (az `input()` metódus segítségével)
+- Nyomtasd ki azt, hogy `"Páros"`, ha a megadott szám páros, vagy azt, hogy `"Páratlan"`, ha a szám páratlan
 
 __Egy, kettő, sok:__
 
-- Készíts egy programot, ami bekér egy számot a felhasználótól. 
-- Ha a szám kisebb, vagy egyenlő 0-val, nyomtasd ki azt, hogy "Nem elég"
-- Ha a szám 1, nyomtasd ki: "Egy"
-- Ha a szám 2, nyomtasd ki: "Kettő"
-- Ha a szám több 2-nél, nyomtasd ki: "Sok"
+- Készíts egy programot, ami bekér egy számot a felhasználótól
+- Ha a szám kisebb, vagy egyenlő 0-val, nyomtasd ki azt, hogy `"Nem elég"`
+- Ha a szám 1, nyomtasd ki: `"Egy"`
+- Ha a szám 2, nyomtasd ki: `"Kettő"`
+- Ha a szám több 2-nél, nyomtasd ki: `"Sok"`
 
 <br>
 
@@ -62,8 +62,8 @@ __Egy, kettő, sok:__
 
 __Számolás:__
 
-- Készíts egy programot, ami bekér 2 számot a felhasználótól.
-- Ha a második szám nagyobb, mint az első, nyomtasd ki: "A másodiknak nagyobbnak kell lennie!"
+- Készíts egy programot, ami bekér 2 számot a felhasználótól
+- Ha a második szám nagyobb, mint az első, nyomtasd ki: `"A másodiknak nagyobbnak kell lennie!"`
 - Ha a második szám nagyobb, nyomtass ki minden számot a két szám között
 
 ```
@@ -81,11 +81,11 @@ A print eredméne:
 
 __PiffPuff:__
 
-Írd ki a konzolra a számokat 1-től 100-ig úgy, hogy ha a szám osztható 3-mal, akkor azt írod a szám helyett, hogy "Piff", ha osztható 7-tel, akkor azt, hogy "Puff", ha mindkettővel, akkor pedig azt, hogy "PiffPuff".
+Írd ki a konzolra a számokat 1-től 100-ig úgy, hogy ha a szám osztható 3-mal, akkor azt írod a szám helyett, hogy `"Piff"`, ha osztható 7-tel, akkor azt, hogy `"Puff"`, ha mindkettővel, akkor pedig azt, hogy `"PiffPuff"`.
 
 __Háromszög:__
 
-- Készíts egy programot, ami bekér 1 számot a felhasználótól, majd egy ilyen háromszöget rajzol:
+- Készíts egy programot, ami bekér 1 számot a felhasználótól, majd egy ilyen háromszöget rajzol. A háromszögnek annyi sora legyen, amennyi a felhasználó által megadott szám.
 
 ```
 *
@@ -97,6 +97,7 @@ __Háromszög:__
 __Piramis (nehezebb):__
 
 Hozz létre egy változót `sorokSzama` néven, amit tölts fel értékkel, pl. `4`. Készíts programot, amely ezt rajzolja ki a konzolra, úgy hogy pont annyi sor legyen, amennyi épp a változó értéke:
+
 ```
     *
    ***
@@ -104,32 +105,30 @@ Hozz létre egy változót `sorokSzama` néven, amit tölts fel értékkel, pl. 
  *******
 ```
 
-A háromszögnek annyi sora legyen, amennyi a felhasználó által megadott szám.
-
 <br>
 
 ### Tuple
 
 __Harmadik:__
 
-- Készíts egy listát tartalmazó változót `lista` néven, a következő tartalommal: `[4, 5, 6, 7]`
+- Készíts egy tuple változót a következő tartalommal: `(4, 5, 6, 7)`
 - Nyomtasd ki a harmadik elemét
 
 __Összeg:__
 
-- Készíts egy listát tartalmazó változót `lista` néven, a következő tartalommal: `[54, 23, 66, 12]`
+- Készíts egy tuple változót a következő tartalommal: `(54, 23, 66, 12)`
 - Nyomtasd ki az első és a harmadik elem összegét
 - Nyomtasd ki az összes elem összegét
 
 __Duplázó:__
 
-- Készíts egy listát `lista` néven, a következő tartalommal: `[3, 4, 5, 6, 7]`
-- Duplázz meg minden elemet a listában
+- Készíts egy tuple változót a következő tartalommal: `(3, 4, 5, 6, 7)`
+- Duplázz meg minden elemet
 
 __Fordító:__
 
-- Készíts egy listát `lista` néven, a következő tartalommal: `[3, 4, 5, 6, 7]`
-- Készíts egy új listát, ami ugyan ezeket az elemeket tartalmazza, csak fordított sorrendben
+- Készíts egy tuple változót a következő tartalommal: `(3, 4, 5, 6, 7)`
+- Készíts egy új tuple-t, ami ugyan ezeket az elemeket tartalmazza, csak fordított sorrendben
 
 <br>
 
@@ -212,6 +211,6 @@ __Duplázó:__
 
 __A-t hozzáad:__
 
-- Készíts egy string változót `typo` néven és add neki a `Chinchill`értéket
+- Készíts egy string változót `typo` néven és add neki a `Chinchill` értéket
 - Készíts egy funkciót, ami megkapja ezt a változót paraméterül, hozzáad egy `a` karakter a végéhez és visszaadja a módosított szöveget
 - Módosítsd ezt a funkciót úgy, hogy kaphasson még egy szöveg változót, és azt adja hozzá az első paraméter értékéhez
