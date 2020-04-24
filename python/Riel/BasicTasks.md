@@ -28,10 +28,10 @@ __Csere:__
 - Cseréld fel az a és b változók értékét:
 
 ```
-a = 123;
-b = 526;
-print(a);
-print(b);
+a = 123
+b = 526
+print(a)
+print(b)
 ```
 
 __Átlag:__
@@ -74,7 +74,7 @@ __Szócsere:__
 __Számolás:__
 
 - Készíts egy programot, ami bekér 2 számot a felhasználótól
-- Ha a második szám nagyobb, mint az első, nyomtasd ki: `"A másodiknak nagyobbnak kell lennie!"`
+- Ha a második szám kisebb, mint az első, nyomtasd ki: `"A másodiknak nagyobbnak kell lennie!"`
 - Ha a második szám nagyobb, nyomtass ki minden számot a két szám között
 
 ```
@@ -95,6 +95,7 @@ __PiffPuff:__
 Írd ki a konzolra a számokat 1-től 100-ig úgy, hogy ha a szám osztható 3-mal, akkor azt írod a szám helyett, hogy `"Piff"`, ha osztható 7-tel, akkor azt, hogy `"Puff"`, ha mindkettővel, akkor pedig azt, hogy `"PiffPuff"`.
 
 __Karakter lista:__
+
 - Nyomtasd ki az alábbi `szoveg` változó minden egyes karakterét, az alábbi formátumban:
 
 ```
@@ -109,6 +110,8 @@ Eredmény:
 6. l
 7. i
 ```
+
+- Nyomtasd ki ugyanezt fordított sorrendben
 
 __Háromszög:__
 
@@ -208,7 +211,7 @@ A kulcsok (név) és az érzékek (szám) egyaránt szövegek lesznek.
 
 __Duplázó:__
 
-- Hozz létre egy integer típusú változót `baseNum` néven és add hozzá a 123 értéket.
+- Hozz létre egy integer típusú változót `base_num` néven és add hozzá a 123 értéket.
 - Készíts egy funkciót, ami megkapja ezt a változót paraméterül, megduplázza azt, majd a megduplázott számot adja vissza
 - Nyomtasd ki a visszakapott értéket
 
@@ -217,3 +220,7 @@ __A-t hozzáad:__
 - Készíts egy string változót `typo` néven és add neki a `Chinchill` értéket
 - Készíts egy funkciót, ami megkapja ezt a változót paraméterül, hozzáad egy `a` karakter a végéhez és visszaadja a módosított szöveget
 - Módosítsd ezt a funkciót úgy, hogy kaphasson még egy szöveg változót, és azt adja hozzá az első paraméter értékéhez
+
+__Karakter számláló:__
+
+- Készíts egy funkciót, ami kap egy string változót és visszatér a legtöbbször előforduló karakter gyakoriságával
