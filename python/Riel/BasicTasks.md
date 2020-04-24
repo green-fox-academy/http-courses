@@ -58,6 +58,17 @@ __Egy, kettő, sok:__
 
 <br>
 
+## Szövegek, karakterláncok
+
+__Szócsere:__
+
+- Van egy string típusú változónk az alábbi tartalommal: `"In a dishwasher far far away"`
+- Módosítsd majd nyomtasd ki ennek a szövegét, a string típus beépített metódusát használva: `"In a galaxy far far away"`
+- Nyomtasd ki a szöveg hosszát
+- Nyomtasd ki a szöveg első karakterét
+
+<br>
+
 ## Ciklusok
 
 __Számolás:__
@@ -83,6 +94,22 @@ __PiffPuff:__
 
 Írd ki a konzolra a számokat 1-től 100-ig úgy, hogy ha a szám osztható 3-mal, akkor azt írod a szám helyett, hogy `"Piff"`, ha osztható 7-tel, akkor azt, hogy `"Puff"`, ha mindkettővel, akkor pedig azt, hogy `"PiffPuff"`.
 
+__Karakter lista:__
+- Nyomtasd ki az alábbi `szoveg` változó minden egyes karakterét, az alábbi formátumban:
+
+```
+szoveg="Kutyuli"
+
+Eredmény:
+1. K
+2. u
+3. t
+4. y
+5. u
+6. l
+7. i
+```
+
 __Háromszög:__
 
 - Készíts egy programot, ami bekér 1 számot a felhasználótól, majd egy ilyen háromszöget rajzol. A háromszögnek annyi sora legyen, amennyi a felhasználó által megadott szám.
@@ -104,6 +131,26 @@ Hozz létre egy változót `sorokSzama` néven, amit tölts fel értékkel, pl. 
   *****
  *******
 ```
+
+<br>
+
+## Lista
+
+__Lista bevezető:__
+
+- Hozz létre egy listát `a` néven, a következő tartalommal:
+
+`Apple, Avocado, Blueberries, Durian, Lychee`
+
+- Hozz létre egy `b` listát, aminek az értékei azonosak az `a` lista értékeivel
+- Nomytasd ki, hogy az `a` lista tartalmazza-e a `Durian` elemet
+- Távolítsd el a `Durian` elemet a listából
+- Add hozzá a `Kiwifruit` elemet az `a` listához, a 4. elem után
+- Hasonlítsd össze a 2 lista méretét
+- Nyomtasd ki az `Avocado` elem indexét az `a` listában
+- Nyomtasd ki a `Durian` elem indexét a `b` listában
+- Add hozzá a `Passion Fruit` és `Pomelo` elemeket a `b` listához, egyetlen parancs segítségével
+- Nyomtasd ki az `a` lista 3. elemét
 
 <br>
 
@@ -130,50 +177,6 @@ __Fordító:__
 - Készíts egy tuple változót a következő tartalommal: `(3, 4, 5, 6, 7)`
 - Készíts egy új tuple-t, ami ugyan ezeket az elemeket tartalmazza, csak fordított sorrendben
 
-<br>
-
-## Szövegek, karakterláncok
-
-__Szócsere:__
-
-- Van egy string típusú változónk az alábbi tartalommal: `"In a dishwasher far far away"`
-- Módosítsd majd nyomtasd ki ennek a szövegét, a string típus beépített metódusát használva: `"In a galaxy far far away"`
-
-__Karakter lista:__
-- Nyomtasd ki az alábbi `szoveg` változó minden egyes karakterét, az alábbi formátumban:
-
-```
-szoveg="Kutyuli"
-
-Eredmény:
-1. K
-2. u
-3. t
-4. y
-5. u
-6. l
-7. i
-```
-
-<br>
-
-## Lista
-
-__Lista bevezető:__
-
-- Hozz létre egy listát `a` néven, a következő tartalommal:
-
-`Apple, Avocado, Blueberries, Durian, Lychee`
-
-- Hozz létre egy `b` listát, aminek az értékei azonosak az `a` lista értékeivel
-- Nomytasd ki, hogy az `a` lista tartalmazza-e a `Durian` elemet
-- Távolítsd el a `Durian` elemet a listából
-- Add hozzá a `Kiwifruit` elemet az `a` listához, a 4. elem után
-- Hasonlítsd össze a 2 lista méretét
-- Nyomtasd ki az `Avocado` elem indexét az `a` listában
-- Nyomtasd ki a `Durian` elem indexét a `b` listában
-- Add hozzá a `Passion Fruit` és `Pomelo` elemeket a `b` listához, egyetlen parancs segítségével
-- Nyomtasd ki az `a` lista 3. elemét
 
 <br>
 
