@@ -36,3 +36,9 @@ def get_longest_word(sentence):
 
 word = get_longest_word("Ez egy különösen hosszú mondat")
 print(word)
+
+
+# Alternazív megoldás a beépített max() metódus használatával
+a_list = ["a_string", "the_longest_string", "string"]
+longest_string = max(a_list, key=len)
+print(longest_string)
