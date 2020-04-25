@@ -25,3 +25,6 @@ file5.close()
 file6 = open('new-text.txt', 'a')
 file6.write('borz')
 file6.close()
+
+with open('text.txt') as f:
+    print(f.read())
