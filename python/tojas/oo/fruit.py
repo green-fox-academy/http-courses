@@ -25,3 +25,11 @@ banan = Fruit('banana', 100, 'sarga')
 banan.norbi_update(50)
 banan.intro()
 print(banan)
+
+class ExoticFruit(Fruit):
+    def samba(self):
+        print('olle')
+
+mango = ExoticFruit('mango', 60, 'sarga')
+mango.intro()
+mango.samba()
