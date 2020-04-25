@@ -17,3 +17,11 @@ file4 = open('text.txt', 'r', encoding="UTF-8")
 for line in file4:
     print(line)
 file4.close()
+
+file5 = open('new-text.txt', 'w')
+file5.write('kacsa\nkecske\n')
+file5.close()
+
+file6 = open('new-text.txt', 'a')
+file6.write('borz')
+file6.close()
