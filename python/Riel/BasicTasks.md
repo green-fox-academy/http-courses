@@ -66,6 +66,8 @@ __Szócsere:__
 - Módosítsd majd nyomtasd ki ennek a szövegét, a string típus beépített metódusát használva: `"In a galaxy far far away"`
 - Nyomtasd ki a szöveg hosszát
 - Nyomtasd ki a szöveg első karakterét
+- Nyomtasd ki, hány szóból áll a szöveg (Lista használattal)
+- Nyomtasd ki az utolsó előtti szót (Lista használattal)
 
 <br>
 
