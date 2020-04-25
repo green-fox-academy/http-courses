@@ -5,17 +5,14 @@ szoveg4 = ""
 
 
 def palindromok(szoveg):
-    kezd = 0
-    hossz = len(szoveg)
     palindrom = []
-    while kezd < hossz:
+    hossz = len(szoveg)
+    for kezd in range(hossz-3):
         vegz = kezd + 3
-        while vegz < hossz+1:
+        for vegz in range(vegz, hossz+1):
             reszlet = szoveg[kezd:vegz]
             if reszlet == reszlet[::-1]:
                 palindrom.append(reszlet)
-            vegz += 1
-        kezd += 1
     return(palindrom)
 
 
