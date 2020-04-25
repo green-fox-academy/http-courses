@@ -3,7 +3,7 @@
 ## Változók és operátorok
 
 
-__Bemutatkozás:____
+__Bemutatkozás:__
 
 Mutasd be magad változók segítségével! Hozz létre három változót egyet a nevednek, egyet a korodnak és egyet a kedvenc gyümölcsödnek.
 Írd ki a konzolra a következőket a változók használatával:
@@ -66,6 +66,8 @@ __Szócsere:__
 - Módosítsd majd nyomtasd ki ennek a szövegét, a string típus beépített metódusát használva: `"In a galaxy far far away"`
 - Nyomtasd ki a szöveg hosszát
 - Nyomtasd ki a szöveg első karakterét
+- Nyomtasd ki, hány szóból áll a szöveg (Lista használattal)
+- Nyomtasd ki az utolsó előtti szót (Lista használattal)
 
 <br>
 
@@ -166,9 +168,10 @@ __Harmadik:__
 
 __Összeg:__
 
-- Készíts egy tuple változót a következő tartalommal: `(54, 23, 66, 12)`
+- Készíts egy tuple változót a következő tartalommal: `(54, 23, 66, 12, 66)`
 - Nyomtasd ki az első és a harmadik elem összegét
 - Nyomtasd ki az összes elem összegét
+- Nyomtasd ki, hányszor fordul elő a 66-os szám
 
 __Duplázó:__
 
@@ -180,6 +183,8 @@ __Fordító:__
 - Készíts egy tuple változót a következő tartalommal: `(3, 4, 5, 6, 7)`
 - Készíts egy új tuple-t, ami ugyan ezeket az elemeket tartalmazza, csak fordított sorrendben
 
+__Jó leszek:__
+- Készíts egy tuple-t aminek a tartalma 27 db string ezzel a szöveggel: `"Jó leszek"`
 
 <br>
 
