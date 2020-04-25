@@ -1,4 +1,11 @@
 class PostIt:
+<<<<<<< HEAD
+=======
+    hatter_szin = ''
+    szoveg = ''
+    szoveg_szin = ''
+
+>>>>>>> 29d61982b800febe0a82291189a3399b7f3ccc6f
     def __init__(self, hatter_szin, szoveg, szoveg_szin):
         self.hatter_szin = hatter_szin
         self.szoveg = szoveg
