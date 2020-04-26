@@ -229,3 +229,6 @@ __A-t hozzáad:__
 __Karakter számláló:__
 
 - Készíts egy funkciót, ami kap egy string változót és visszatér a legtöbbször előforduló karakter gyakoriságával
+
+__Háromszög rajzoló:__
+- Készíts egy funkciót, ami egy számot kap paraméterül, és a számnak megfelelő sorba felrajzol egy háromszöget, a fenti __Háromszög__ feladat szerint. A funkció adja vissza a kirajzolt csillagok számát.
