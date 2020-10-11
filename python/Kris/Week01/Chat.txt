@@ -1,0 +1,250 @@
+from ITMP Klub 2 to everyone:    9:28 AM
+Sziasztok, jó reggelt!
+from ITMP Klub 2 to everyone:    9:29 AM
+Kovács Krisztián vagyok, 09:35-ig megvárjuk, hogy mindenkinek sikerüljön belépni, addig mindenki tud kávézni egyet vagy amire szüksége van :)
+from Dedeo Zsofi (privately):    9:31 AM
+hali
+from Dedeo Zsofi (privately):    9:32 AM
+nem nemitasz le mindenkit?
+from Dedeo Zsofi (privately):    9:32 AM
+csak hogy ne legyen ez a hatterzaj :)
+from Viktor Madarasz to everyone:    9:32 AM
+Aki éppen nem beszél az megtenné, hogy újra elnémítja a mikrofonját.
+from Viktor Madarasz to everyone:    9:32 AM
+Köszönöm.
+from Dedeo Zsofi to everyone:    9:38 AM
+sziasztok! ha felmerul barmilyen kerdes, akkor ide is irhatjatok, a segedmentorokkal igyekszunk megvalaszolni oket!
+from Demeter Attila (privately):    9:52 AM
+Sziasztok! Nekem type nélkül is kiírta
+from Katona Csaba (privately):    10:21 AM
+bocs
+from Sike Zsolt to everyone:    10:21 AM
+Fordítva is ki lehet így írni?
+from Katona Csaba (privately):    10:22 AM
+belépési problémám volt meg tudod írni hogy erem el a parancssoros feluletet?
+from Nagy Orsi to everyone:    10:22 AM
+Az egész szöveget megfordítva?
+from Dedeo Zsofi to everyone:    10:23 AM
+[::-1]-et kell utana irni
+from Nagy Orsi to everyone:    10:23 AM
+print(név[::-1]) így az egészet megfordítja
+from Dedeo Zsofi to everyone:    10:24 AM
+es akkor
+from Nagy Orsi to everyone:    10:24 AM
+de ha ugyanazt akarod fordítva, akkor print(név[::-2])
+from Nagy Orsi to everyone:    10:25 AM
+"ktsiS"
+from Péter Bernáth to everyone:    10:27 AM
+Betűtípust is változtathatunk?
+from Dedeo Zsofi to everyone:    10:30 AM
+az vs code beallitas
+from Katona Csaba (privately):    10:34 AM
+Abszolut kezdő vagyok hogy tudom en is beírni a parancssorba amiket Te beirsz? Az elejen nem voltam emg gondom volt
+from Katona Csaba (privately):    10:34 AM
+Kriszta segített a belépéssel mert nem engedett be valamiert
+from Demeter Attila (privately):    10:35 AM
+5
+from Bornemissza Zsigmond to everyone:    10:40 AM
+print(f"A nevem {nev}, életkorom: {kor}")
+from Bornemissza Zsigmond to everyone:    10:40 AM
+átláthatóbbnak tartom
+from PéZé (privately):    11:21 AM
+Az értéke lehet pl lsta is?
+from PéZé (privately):    11:27 AM
+igen
+from PéZé (privately):    11:28 AM
+Igen
+from PéZé (privately):    11:29 AM
+Pedig kipróbáltam és működik ez:
+from PéZé (privately):    11:29 AM
+szotar={1:"elso", 2:"masod", 3:[1,2,3]}
+print(szotar.get(3))
+from PéZé (privately):    11:29 AM
+Ez lett az eredmény: [1, 2, 3]
+from PéZé (privately):    11:29 AM
+Sztem csak lista nem lehet
+from PéZé (privately):    11:30 AM
+a szó nem lehet
+from Bornemissza Zsigmond to everyone:    11:32 AM
+szótár[4] = {'alma','kötre'}
+from PéZé (privately):    11:32 AM
+A lista szót nem szereti
+from PéZé (privately):    11:32 AM
+Bocs, köszi
+from Demeter Attila (privately):    12:03 PM
+ebéd és ébresztő
+from Janos Bodnar to everyone:    1:00 PM
+:)
+from ITMP Klub 2 to everyone:    1:01 PM
+Sziasztok!
+from Bornemissza Zsigmond to everyone:    1:01 PM
+14:5 az arány
+from Janos Bodnar to everyone:    1:01 PM
+Szia :)
+from Bornemissza Zsigmond to everyone:    1:02 PM
+ITMP Klub 2 : ITMP Klub 8
+from ITMP Klub 2 to everyone:    1:03 PM
+Mivel nem jutott idő a függvényekre (functions), így azt beszéltük Krisztával, hogy az jövőhétre marad
+from ITMP Klub 2 to everyone:    1:04 PM
+De ha valaki igényli, akkor elmondom most gyorsan, bár nyilván lényegesen kevesebben vagyunk már, illetve ha jól látom, akkor a haladók közül jöttek át ebbe a szobába
+from Bognár Pál to everyone:    1:09 PM
+Lehet feladatonként és egyben is réászemről
+from Bognár Pál to everyone:    1:10 PM
+ok
+from Janos Bodnar to everyone:    2:02 PM
+:)
+from Bernadett to everyone:    2:03 PM
+:)
+from Bognár Pál to everyone:    2:03 PM
+igen
+from Janos Bodnar to everyone:    2:04 PM
+nekem van egy ilyen
+from Janos Bodnar to everyone:    2:05 PM
+or i in range(sorokSzama):
+    print(('{:^'+str(sorokSzama*2-1)+'}').format('*' * (1+i*2)))
+from Reményi Zoltán to everyone:    2:05 PM
+4. feladatra ez?
+from Reményi Zoltán to everyone:    2:05 PM
+sorokSzáma = 15
+üres = ""
+csillagos = "*"
+for x in range(sorokSzáma-1):
+    üres += " "
+for x in range(sorokSzáma):
+    print(üres+csillagos)
+    csillagos += "**"
+    üres = üres[:len(üres)-1]
+from Janos Bodnar to everyone:    2:05 PM
+az or az for
+from Reményi Zoltán to everyone:    2:05 PM
+de ronda lett itt. :-(
+from Reményi Zoltán to everyone:    2:06 PM
+sorokSzáma = 15
+
+üres = ""
+
+csillagos = "*"
+
+for x in range(sorokSzáma-1):
+
+    üres += " "
+
+for x in range(sorokSzáma):
+
+    print(üres+csillagos)
+
+    csillagos += "**"
+
+    üres = üres[:len(üres)-1]
+from Janos Bodnar to everyone:    2:06 PM
+Bocsi mégegyszer...
+from Bognár Pál to everyone:    2:06 PM
+def feladat4(numOfLines):
+    stars = '*'
+    for i in range(numOfLines):
+        print(stars.rjust(numOfLines+i))
+        stars += '**'
+from Janos Bodnar to everyone:    2:06 PM
+for i in range(sorokSzama):
+    print(('{:^'+str(sorokSzama*2-1)+'}').format('*' * (1+i*2)))
+from Gyombolainé Cserny Zsuzsanna to everyone:    2:09 PM
+sorokSzama=4
+kiir=""
+for i in range(1,sorokSzama+1,1):
+    print(" "*(sorokSzama-i)+"*"*((i*2)-1))
+from Bognár Pál to everyone:    2:11 PM
+Ugyanez, kicsit másképp:
+from Bognár Pál to everyone:    2:11 PM
+def feladat4(numOfLines):
+    for i in range(numOfLines):
+        print(format('*' * (1 + i * 2)).rjust(numOfLines+i))
+from Janos Bodnar to everyone:    2:11 PM
+print('+','{:^9}'.format("*"),'+')
+
+from Bognár Pál to everyone:    2:13 PM
+kiegészíti x szóközzel
+from Bognár Pál to everyone:    2:13 PM
+rjust vs ljust
+from Bognár Pál to everyone:    2:13 PM
+jobbról - balról
+from Bognár Pál to everyone:    2:16 PM
+sum és len van
+from Janos Bodnar to everyone:    2:18 PM
+Ilyen megoldást találtam.
+from Janos Bodnar to everyone:    2:19 PM
+5.feladat
+from Janos Bodnar to everyone:    2:19 PM
+import statistics
+lst = [1, 2, 3, 4, 5, 6, 7]
+print(statistics.mean(lst))
+from Gyombolainé Cserny Zsuzsanna (privately):    2:31 PM
+Hogy lehet üres két dimenziós mátrixot létrehozni, ha a sorok és oszlopok számát egy másik mátrixból kiolvastam; (6. feladat) /Fix mátrix méretre már megvan, változóra nincs./
+to Gyombolainé Cserny Zsuzsanna (privately):    2:34 PM
+Nem biztos, hogy jól értem a kérdést, de teljesen üres két dimenziós mátrixot így is létre lehet hozni:
+to Gyombolainé Cserny Zsuzsanna (privately):    2:35 PM
+pl.: matrix = [[], [], []]
+from Kriszta to everyone:    2:36 PM
+https://forms.gle/opu2y9brdZDfdQoG8
+from Gyombolainé Cserny Zsuzsanna (privately):    2:36 PM
+matrix=[[1,2,3],[4,5,6],[7,8,9]]
+#print (matrix[0][0])
+def transzponal(matrix):      
+    szeles=len(matrix[0])
+    magas=len(matrix)    
+    cm=[[0,0,0],[0,0,0],[0,0,0]]
+    for i in range(szeles-1,-1,-1):
+        sor=""
+        for j in range(0,magas,1):
+            cm[i][j]=matrix[j][i]
+            sor=sor+str(matrix[j][i])+" "            
+        print(sor)
+    return cm
+#transzponal(matrix)
+celmatrix=transzponal(matrix)
+print(celmatrix)
+from Janos Bodnar to everyone:    2:36 PM
+ok :)
+from Gyombolainé Cserny Zsuzsanna (privately):    2:37 PM
+Ebben hogyan trudom kiváltani, a cm=[... sor kiváltani tetszőleges méretű tömbre, 0 értékű tömbre?
+to Gyombolainé Cserny Zsuzsanna (privately):    2:40 PM
+Igazából nem feltétlenül kell üreset létrehozni, lehetne a cm = matrix[:]
+from Gyombolainé Cserny Zsuzsanna (privately):    2:41 PM
+Igen, de úgy címszerinti átadás van és rossz eredményt hoz eredményül. :(
+to Gyombolainé Cserny Zsuzsanna (privately):    2:44 PM
+cm = [ [0]*3 for i in range(3)]
+from Gyombolainé Cserny Zsuzsanna (privately):    2:44 PM
+Köszönöm!
+to Gyombolainé Cserny Zsuzsanna (privately):    2:45 PM
+Nincs mit, nekem ez tűnt a leghasználhatóbb ötletnek
+from Bernadett to everyone:    2:55 PM
+Szervusztok, bocsi, de mennem kell.
+from Bernadett to everyone:    2:55 PM
+További szép napot!
+from ITMP Klub 2 to everyone:    2:55 PM
+Rendben, viszont neked is!
+from Janos Bodnar to everyone:    2:55 PM
+Szia :)
+from ITMP Klub 2 to everyone:    3:05 PM
+5 percre el kell mennem (a esetleg pont most lenne rám szükség, mindjárt jövök)
+from RBHajni to everyone:    3:46 PM
+sziasztok, jó hétvégét
+from ITMP Klub 2 to everyone:    3:46 PM
+Szia!
+from Janos Bodnar to everyone:    3:46 PM
+Szia :)
+from Bognár Pál to everyone:    3:46 PM
+Nekem is mennem kell. sziasztok
+from Janos Bodnar to everyone:    3:47 PM
+Szia :)
+from ITMP Klub 2 to everyone:    3:47 PM
+Szia!
+from Janos Bodnar to everyone:    3:48 PM
+Sziasztok köszi a lehetőséget.
+from ITMP Klub 2 to everyone:    3:48 PM
+További szép napot! :)
+from Oláh Katalin to everyone:    3:50 PM
+Sziasztok, és további szép hétvégét!
+from ITMP Klub 2 to everyone:    3:50 PM
+Viszont neked is! :)
+from Gyombolainé Cserny Zsuzsanna to everyone:    3:55 PM
+Sziasztok!
