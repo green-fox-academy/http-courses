@@ -1,5 +1,5 @@
 # https://docs.python.org/3/library/exceptions.html
-
+# https://docs.python.org/3/reference/compound_stmts.html#the-try-statement
 
 try:
     print("1")

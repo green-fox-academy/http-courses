@@ -34,8 +34,11 @@ file4.close()
 # file5.close()
 
 #Append
+import os
+print(list(os.linesep))
+
 file5 = open("text.txt", "a")
-file5.write("\nsokadibb sor")
+file5.write("sokadibb sor" + os.linesep)
 file5.close()
 
 with open("text.txt", "r") as file6:
